@@ -93,8 +93,8 @@ const Home = (props) => {
         <div className="home-content">
           <h1 className="home-title">Get confident about your website.</h1>
           <span className="home-description">
-            Don't continue to put off your website. Just send me an email and
-            I'll get the ball rolling.
+            Don't continue to put off your website. Send me an email and get the
+            ball rolling.
           </span>
           <button className="button home-button06">
             {/* add a button to email form. */}
