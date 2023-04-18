@@ -710,7 +710,7 @@
   border-radius: var(--dl-radius-radius-round);
   flex-direction: row;
   justify-content: flex-end;
-  background-color: #E6F9E0;
+  background-color: #e6f9e0;
 }
 .home-next:hover {
   background-color: rgba(230, 249, 224, 0.5);
@@ -1167,7 +1167,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  background-color: #FAE48E;
+  background-color: #fae48e;
 }
 .home-image44 {
   height: 330px;
@@ -1223,7 +1223,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  background-color: #FAE48E;
+  background-color: #fae48e;
 }
 .home-image49 {
   height: 330px;
@@ -1356,7 +1356,7 @@
   flex-direction: row;
   padding-bottom: 2px;
   justify-content: center;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 .home-textinput {
   flex: 1;
@@ -1383,7 +1383,8 @@
 }
 .home-image51 {
   width: 18px;
-  filter: brightness(0) saturate(100%) invert(88%) sepia(8%) saturate(484%) hue-rotate(62deg) brightness(111%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(88%) sepia(8%) saturate(484%)
+    hue-rotate(62deg) brightness(111%) contrast(95%);
   transform: rotate(-45deg);
   object-fit: cover;
 }
@@ -1404,7 +1405,7 @@
   font-family: Lato;
   line-height: 15px;
 }
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .home-navbar-interactive {
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
@@ -1655,7 +1656,7 @@
     line-height: 13px;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .home-desktop-menu {
     display: none;
   }
@@ -1666,7 +1667,7 @@
     aspect-ratio: 1;
     border-radius: var(--dl-radius-radius-round);
     justify-content: center;
-    background-color: #E6F9E0;
+    background-color: #e6f9e0;
   }
   .home-hamburger {
     width: 16px;
@@ -1734,7 +1735,7 @@
     text-align: center;
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .home-social-bar {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);

@@ -97,7 +97,6 @@ const Home = (props) => {
             I'll get the ball rolling.
           </span>
           <button className="button home-button06">
-            {/* add a button to email form. */}
             <span className="home-text09">Email Jordan</span>
           </button>
           <img
@@ -121,13 +120,70 @@ const Home = (props) => {
       </header>
       <section className="home-mission">
         <h2 className="home-text08">
-          Your website budget is low, but you want to work with a human being to
-          create a website you can show off to your friends and family.
-          <br />
-          <br />I get it.
+          Scale your small lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore.
         </h2>
+        <button className="button home-button06">
+          <span className="home-text09">Learn about our mission</span>
+        </button>
       </section>
-      <section className="home-improve"></section>
+      <section className="home-improve">
+        <div className="home-heading">
+          <h2 className="home-text10">
+            Set new heights, improve your business
+          </h2>
+          <p className="home-text11">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div className="home-tabs">
+          <div className="home-switches">
+            <span className="switch switch-active">
+              Connect with professionals
+            </span>
+            <span className="switch">Connect with mentors</span>
+          </div>
+          <div className="home-content1">
+            <div className="home-details">
+              <div className="home-header">
+                <h2 className="home-text12">Website Engagement Design</h2>
+                <div className="home-description1">
+                  <p className="home-text13">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
+                    in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p className="home-text14">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: " ",
+                      }}
+                    />
+                  </p>
+                </div>
+              </div>
+              <button className="button">
+                <span className="home-text15">
+                  <span>Get a quote</span>
+                  <br></br>
+                </span>
+              </button>
+            </div>
+            <div className="home-image04">
+              <img
+                alt="image"
+                src="/playground_assets/pexels-darina-belonogova-7959815%201-1300w.png"
+                className="home-image05"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="home-services">
         <h2 className="home-text18">High-impact business services</h2>
         <div className="home-cards">
