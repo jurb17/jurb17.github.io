@@ -1,33 +1,40 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './links.css'
+import "./links.css";
+import "../views/home.css";
 
 const Links = (props) => {
   return (
-    <nav className="links-links">
-      <button className="links-button button">
-        <span>{props.text}</span>
-      </button>
-      <button className="links-button1 button">
-        <span>{props.text1}</span>
-      </button>
-      <button className="links-button2 button">{props.button}</button>
+    <nav className="home-links">
+      <a href="#/pricing">
+        <button className="home-button button">
+          <span>Pricing</span>
+        </button>
+      </a>
+      <a href="#/portfolio">
+        <button className="home-button01 button">
+          <span>Portfolio</span>
+        </button>
+      </a>
+      <a href="#/form">
+        <button className="button home-button06">Get Started</button>
+      </a>
     </nav>
-  )
-}
+  );
+};
 
 Links.defaultProps = {
-  button: 'Menu',
-  text: 'Our offers',
-  text1: 'Get a fast quote',
-}
+  button: "Get Started",
+  text: "Pricing",
+  text1: "Portfolio",
+};
 
 Links.propTypes = {
   button: PropTypes.string,
   text: PropTypes.string,
   text1: PropTypes.string,
-}
+};
 
-export default Links
+export default Links;

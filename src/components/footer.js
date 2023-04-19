@@ -45,12 +45,21 @@ const Footer = (props) => {
           <span className="link">{props.firstCol6}</span>
         </div>
         <div className="footer-column1">
-          <a href="https://www.google.com" target={"_blank"}>
+          <a href="#/pricing">
             <span className="link">{props.secondCol1}</span>
           </a>
-          <span className="link">{props.secondCol2}</span>
-          <span className="link">{props.secondCol3}</span>
-          <span className="link">{props.secondCol4}</span>
+          <a href="#/portfolio">
+            <span className="link">{props.secondCol2}</span>
+          </a>
+          <a href="mailto:jordan@jordanwebdesign.com" target={"_blank"}>
+            <span className="link">{props.secondCol3}</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jordan-urbaczek/"
+            target={"_blank"}
+          >
+            <span className="link">{props.secondCol4}</span>
+          </a>
         </div>
       </div>
     </footer>
@@ -58,8 +67,8 @@ const Footer = (props) => {
 };
 
 Footer.defaultProps = {
-  secondCol2: "Contact",
-  secondCol4: "Facebook",
+  secondCol2: "Portfolio",
+  secondCol4: "LinkedIn",
   secondCol1: "Pricing\n",
   // Copyright: "©2022 Product Calgary. All Rights Reserved.",
   image_alt: "image",
@@ -71,7 +80,7 @@ Footer.defaultProps = {
   email: "jordan@jordanwebdesign.com",
   // secondCol3: "Twitter",
   // firstCol5: "Blog",
-  secondCol3: "Linkedin",
+  secondCol3: "Contact",
   // firstCol3: "Events",
   text2: "+1 732-642-7945",
   image_alt1: "image",
