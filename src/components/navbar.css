@@ -1,0 +1,22 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  transition: all 0.8s ease;
+  padding: 18px;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  z-index: 1;
+  transition: all 0.8s ease;
+}
+.logo img {
+  width: 50px;
+}
