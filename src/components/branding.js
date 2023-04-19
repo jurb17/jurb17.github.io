@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import './branding.css'
+import "./branding.css";
 
 const Branding = (props) => {
   return (
@@ -13,17 +13,17 @@ const Branding = (props) => {
       </svg>
       <span className="branding-text1">{props.text1}</span>
     </div>
-  )
-}
+  );
+};
 
 Branding.defaultProps = {
-  text: 'Remarkable',
-  text1: 'Remarkable',
-}
+  text: "JWD",
+  text1: "Jordan Web Design",
+};
 
 Branding.propTypes = {
   text: PropTypes.string,
   text1: PropTypes.string,
-}
+};
 
-export default Branding
+export default Branding;
