@@ -6,13 +6,15 @@ import { Helmet } from "react-helmet";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import "./home.css";
+import SplitSection from "../components/SplitSection";
+import { IconBrandHipchat, IconRocket, IconMagnet } from "@tabler/icons-react";
 
 const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Remarkable template</title>
-        <meta property="og:title" content="Remarkable template" />
+        <title>Jordan Web Design</title>
+        <meta property="og:title" content="Jordan Web Design" />
       </Helmet>
       <div className="home-navbar">
         <header data-thq="thq-navbar" className="home-navbar-interactive">
@@ -93,12 +95,14 @@ const Home = (props) => {
         <div className="home-content">
           <h1 className="home-title">Get confident about your website.</h1>
           <span className="home-description">
-            Don't continue to put off your website. Send me an email and get the
-            ball rolling.
+            Don't continue to put off your website. Send me an email to get the
+            ball rolling today.
           </span>
           <button className="button home-button06">
-            {/* add a button to email form. */}
-            <span className="home-text09">Email Jordan</span>
+            {/* $$$add a button to email form. */}
+            <a href="mailto:jordan@jordanwebdesign.com">
+              <span className="home-text09">Email Jordan</span>
+            </a>
           </button>
           <img
             alt="image"
@@ -109,743 +113,89 @@ const Home = (props) => {
         <div className="home-image01">
           <img
             alt="image"
-            src="/playground_assets/me_in_paris.jpg"
+            src="/playground_assets/me_in_paris.png"
             className="home-image02"
           />
-          {/* <img
-            alt="image"
-            src="/playground_assets/hero%20%232-1500w.png"
-            className="home-image03"
-          /> */}
         </div>
       </header>
       <section className="home-mission">
         <h2 className="home-text08">
-          Your website budget is low, but you want to work with a human being to
-          create a website you can show off to your friends and family.
+          Your website budget is low and you want to work with a human being to
+          create a website you love.
           <br />
-          <br />I get it.
+          <br />
+          That's why I'm here.
         </h2>
       </section>
-      <section className="home-improve"></section>
+      <section>
+        <SplitSection
+          title={"About Me"}
+          paragraph1={
+            "I am an engineering graduate of Stevens Institute of Technology with experience taking extracurricular classes in software development. I worked for 3 years as a software product manager for a biotech startup and wore many hats, including UX designer, account manager, and web developer. Since then, I've started a software company with colleagues to offer a financial advice marketplace called Rally. I built the entire front end of our platform and lead user acquisition efforts."
+          }
+          paragraph2={
+            "My experience provides me with a solid understanding of the technology side and business side of small companies, which allows me to work well with small business owners to deliver a website that's valuable to them."
+          }
+          filename={"standing_coffee_like.png"}
+        ></SplitSection>
+      </section>
+      <section>
+        <div className="home-heading">
+          <h2 className="home-text10">What you can expect...</h2>
+          <p className="home-text11"></p>
+        </div>
+      </section>
       <section className="home-services">
-        <h2 className="home-text18">High-impact business services</h2>
         <div className="home-cards">
           <div className="home-row">
-            <Card></Card>
             <Card
-              Icon="/playground_assets/group%201644.svg"
-              Title="Learn from the community"
+              Icon={
+                <IconBrandHipchat stroke={1.5} size="3em">
+                  {" "}
+                </IconBrandHipchat>
+              }
+              Title={"Easy Communication"}
+              Description={
+                "Reach out whenever works best for you. I'm always willing to be flexible for my clients."
+              }
+            ></Card>
+            <Card
+              Icon={<IconRocket stroke={1.5} size="3em"></IconRocket>}
+              Title="Quick Launch"
+              Description="Get your site up fast. Let's collaborate so your brand can be on the web within hours."
             ></Card>
           </div>
           <div className="home-row1">
             <Card
-              Icon="/playground_assets/group%201645.svg"
-              Title="Customer acquisition"
-            ></Card>
-            <Card
-              Icon="/playground_assets/group%201646.svg"
-              Title="Business to business"
-            ></Card>
-          </div>
-        </div>
-      </section>
-      <section className="home-testimonials">
-        <div className="home-container1">
-          <div className="home-content2">
-            <div className="active-quote quote">
-              <img
-                alt="image"
-                src="/playground_assets/foto-sushi-6anudmpilw4-unsplash-200h.png"
-                role="quote-avatar"
-                className="home-image06"
-              />
-              <p role="quote-content" className="home-quote1">
-                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                &quot;
-              </p>
-              <div className="home-author">
-                <span role="quote-author" className="home-name">
-                  Michael B.
-                </span>
-                <span role="quote-origin" className="home-origin">
-                  Clean Tech
-                </span>
-              </div>
-            </div>
-            <div className="quote">
-              <img
-                alt="image"
-                src="/playground_assets/foto-sushi-ocow8-uiajk-unsplash%20%5B1%5D%201-200h.png"
-                role="quote-avatar"
-                className="home-image07"
-              />
-              <p role="quote-content" className="home-quote3">
-                <span className="home-text19">
-                  &quot;This is a very fascinating website&quot;
-                </span>
-                <br></br>
-                <span>
-                  eiusmod tempor incididunt ut laborqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation.
-                </span>
-                <br></br>
-              </p>
-              <div className="home-author1">
-                <span role="quote-author" className="home-name1">
-                  Michael B.
-                </span>
-                <span role="quote-origin" className="home-origin1">
-                  Clean Tech
-                </span>
-              </div>
-            </div>
-            <div className="quote">
-              <img
-                alt="image"
-                src="https://images.unsplash.com/photo-1586716402203-79219bede43c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3RyYWl0fGVufDB8fHx8MTY2OTcyODk4OA&amp;ixlib=rb-4.0.3&amp;w=200"
-                role="quote-avatar"
-                className="home-image08"
-              />
-              <p role="quote-content" className="home-quote5">
-                <span className="home-text23">
-                  &quot;I really love how well this is done! :D&quot;
-                </span>
-                <br></br>
-                <span>eiusmod tempor incididunt ut labore et</span>
-                <br></br>
-                <span> dolore magna aliqua. Ut enim </span>
-                <br></br>
-              </p>
-              <div className="home-author2">
-                <span role="quote-author" className="home-name2">
-                  Herola
-                </span>
-                <span role="quote-origin" className="home-origin2">
-                  TechCo
-                </span>
-              </div>
-            </div>
-            <div className="quote">
-              <img
-                alt="image"
-                src="https://images.unsplash.com/photo-1618151313441-bc79b11e5090?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEzfHxwb3RyYWl0fGVufDB8fHx8MTY2OTcyODk4OA&amp;ixlib=rb-4.0.3&amp;w=200"
-                role="quote-avatar"
-                className="home-image09"
-              />
-              <p role="quote-content" className="home-quote7">
-                <span className="home-text29">
-                  &quot;Nothing will every beat this!&quot;
-                </span>
-                <br></br>
-                <span>
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud exercitation Nsdadasd
-                  asdadasd
-                </span>
-                <br></br>
-              </p>
-              <div className="home-author3">
-                <span role="quote-author" className="home-name3">
-                  John A.
-                </span>
-                <span role="quote-origin" className="home-origin3">
-                  Rebo
-                </span>
-              </div>
-            </div>
-            <div className="home-controls">
-              <div id="quote-previous" className="home-previous">
-                <img
-                  alt="image"
-                  src="/playground_assets/frame.svg"
-                  className="home-image10"
-                />
-              </div>
-              <div id="quote-next" className="home-next">
-                <img
-                  alt="image"
-                  src="/playground_assets/frame.svg"
-                  className="home-image11"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <DangerousHTML
-            html={`<script>
-  /*
-              Quote Slider - Code Embed
-              */
-
-              let current = 1;
-
-              const nextButton = document.querySelector("#quote-next");
-              const previousButton = document.querySelector("#quote-previous");
-              const quotes = document.querySelectorAll(".quote");
-
-              if(nextButton&&previousButton){
-                nextButton.addEventListener("click", () => {
-                quotes.forEach((quote) => {
-                quote.classList.remove("active-quote");
-                });
-
-                current == quotes.length ? current = 1 : current++
-                quotes[current-1].classList.add("active-quote")
-                });
-
-                previousButton.addEventListener("click", () => {
-                quotes.forEach((quote) => {
-                quote.classList.remove("active-quote");
-                });
-
-                current == 1 ? current = quotes.length : current--
-                quotes[current-1].classList.add("active-quote")
-                });
-
+              Icon={
+                <IconMagnet stroke={1.5} size="3em">
+                  {" "}
+                </IconMagnet>
               }
-</script>
-`}
-          ></DangerousHTML>
-        </div>
-      </section>
-      <section className="home-partners">
-        <div className="home-content3">
-          <h2 className="home-text33">Our partners</h2>
-          <p className="home-text34">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt.
-          </p>
-        </div>
-        <div className="home-partners-desktop">
-          <div className="home-column">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B1%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202108.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B2%5D.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-          <div className="home-column01">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202107.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B3%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B4%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202110.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-          <div className="home-column02">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202111.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202108.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B5%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B1%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202108.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-          <div className="home-column03">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B2%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202110.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202107.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B3%5D.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="home-partners-mobile">
-          <div className="home-row2">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202108.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202111.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B5%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B4%5D.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-          <div className="home-column04">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B1%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B3%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B4%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202107.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-          <div className="home-column05">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202111.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202108.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/group%202110.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B1%5D.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-          <div className="home-column06">
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B2%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B3%5D.svg"
-                className="partner-image"
-              />
-            </div>
-            <div className="partner-container">
-              <img
-                alt="image"
-                src="/playground_assets/vector%5B4%5D.svg"
-                className="partner-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="home-services1">
-        <div className="home-heading1">
-          <h2 className="home-text35">Take a look at the latest articles</h2>
-          <p className="home-text36">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt.
-          </p>
-        </div>
-        <div className="home-sections">
-          <div className="home-row3">
-            <div className="home-section">
-              <div className="home-header1">
-                <h3 className="home-text37">Understand your customers</h3>
-                <div className="home-description2">
-                  <p className="home-text38">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                  <p className="home-text39">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: " ",
-                      }}
-                    />
-                  </p>
-                </div>
-              </div>
-              <button className="button">
-                <span>
-                  <span>Read more</span>
-                  <br></br>
-                </span>
-              </button>
-            </div>
-            <div className="home-section1">
-              <div className="home-header2">
-                <h3 className="home-text43">Own your business</h3>
-                <div className="home-description3">
-                  <p className="home-text44">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                  <p className="home-text45">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: " ",
-                      }}
-                    />
-                  </p>
-                </div>
-              </div>
-              <button className="button">
-                <span>
-                  <span>Read more</span>
-                  <br></br>
-                </span>
-              </button>
-            </div>
-          </div>
-          <div className="home-row4">
-            <div className="home-section2">
-              <div className="home-header3">
-                <h3 className="home-text49">How to build your team</h3>
-                <div className="home-description4">
-                  <p className="home-text50">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                  <p className="home-text51">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: " ",
-                      }}
-                    />
-                  </p>
-                </div>
-              </div>
-              <button className="button">
-                <span>
-                  <span>Read more</span>
-                  <br></br>
-                </span>
-              </button>
-            </div>
-            <div className="home-section3">
-              <div className="home-header4">
-                <h3 className="home-text55">We can help your business</h3>
-                <div className="home-description5">
-                  <p className="home-text56">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                  <p className="home-text57">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: " ",
-                      }}
-                    />
-                  </p>
-                </div>
-              </div>
-              <button className="button">
-                <span>
-                  <span>Read more</span>
-                  <br></br>
-                </span>
-              </button>
-            </div>
+              Title="Marketing Guidance"
+              Description="Make your website a magnet for recruiters, clients, or whomever you're trying to attract.  "
+            ></Card>
           </div>
         </div>
       </section>
       <section className="home-banner">
         <div className="home-container2">
           <div className="home-header5">
-            <h2 className="home-title1">Scale your business now</h2>
+            <h2 className="home-title1">Expedite the process.</h2>
             <p className="home-description6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+              Fill out the following form and I will reach out asap with a
+              strategy for you.
             </p>
           </div>
           <button className="button">
             <span>
-              <span>Book a call</span>
+              <span>Start Form</span>
               <br></br>
             </span>
           </button>
         </div>
       </section>
-      <section className="home-mission1">
-        <div className="home-content4">
-          <h2 className="home-text64">
-            Our mission is to empower companies lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-          </h2>
-          <div className="home-description7">
-            <p className="home-text65">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-            <p className="home-text66">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="home-galleries">
-        <div className="home-gallery-desktop">
-          <div className="home-column07">
-            <img
-              alt="image"
-              src="/playground_assets/pexels-darina-belonogova-7959670%201-1300w.png"
-              className="home-image43"
-            />
-          </div>
-          <div className="home-column08">
-            <div className="home-row5">
-              <div className="home-yellow"></div>
-              <img
-                alt="image"
-                src="/playground_assets/pexels-darina-belonogova-8373875%203-1300w.png"
-                className="home-image44"
-              />
-            </div>
-            <div className="home-row6">
-              <img
-                alt="image"
-                src="/playground_assets/pexels-darina-belonogova-7964869%201-500w.png"
-                className="home-image45"
-              />
-              <img
-                alt="image"
-                src="/playground_assets/group%202106.svg"
-                className="home-image46"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="home-gallery-mobile">
-          <div className="home-column09">
-            <img
-              alt="image"
-              src="/playground_assets/pexels-darina-belonogova-7959670%201-1300w.png"
-              className="home-image47"
-            />
-            <img
-              alt="image"
-              src="/playground_assets/pexels-darina-belonogova-7964869%201-500w.png"
-              className="home-image48"
-            />
-          </div>
-          <div className="home-column10">
-            <div className="home-yellow1"></div>
-            <img
-              alt="image"
-              src="/playground_assets/pexels-darina-belonogova-8373875%203-1300w.png"
-              className="home-image49"
-            />
-            <div className="home-row7">
-              <img
-                alt="image"
-                src="/playground_assets/group%202106.svg"
-                className="home-image50"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="home-mission2">
-        <div className="home-content5">
-          <cite className="home-quote8">
-            “Remarkable is a professional organization aliquip ex ea commodo
-            consequat duis aute irure dolor in reprehenderit aute”
-          </cite>
-          <div className="home-author4">
-            <img
-              alt="image"
-              src="/playground_assets/foto-sushi-ocow8-uiajk-unsplash%20%5B1%5D%201-200h.png"
-              className="home-avatar"
-            />
-            <div className="home-details1">
-              <span className="home-name4">
-                Michael Beltford,
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-              <span className="home-origin4">founder Clean Tech</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="home-newsletter">
-        <div className="home-header6">
-          <h2 className="home-text67">Subscribe to our newsletter</h2>
-          <p className="home-text68">
-            Sign up for our newsletter to get the latest news!
-          </p>
-        </div>
-        <div className="home-content6">
-          <div className="home-email">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              className="home-textinput input"
-            />
-            <div className="home-submit">
-              <img
-                alt="image"
-                src="/playground_assets/frame.svg"
-                className="home-image51"
-              />
-            </div>
-          </div>
-          <div className="home-notice">
-            <span className="home-notice1">
-              By subscribing occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum
-            </span>
-          </div>
-        </div>
-      </section>
+      <section className="home-newsletter"></section>
       <Footer></Footer>
       <div>
         <DangerousHTML
