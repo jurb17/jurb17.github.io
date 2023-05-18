@@ -108,16 +108,18 @@ const Home = (props) => {
           <div className="home-header5">
             <h2 className="home-title1">Expedite the process.</h2>
             <p className="home-description6">
-              Fill out the following form and I will reach out asap with a
-              strategy for you.
+              Take the first step and schedule a meeting today. <br></br> No
+              commitment, no pressure.
             </p>
           </div>
-          <button className="button">
-            <span>
-              <span>Start Form</span>
-              <br></br>
-            </span>
-          </button>
+          <a href="https://meetings.hubspot.com/jurbaczek">
+            <button className="button">
+              <span>
+                <span>Schedule Meeting</span>
+                <br></br>
+              </span>
+            </button>
+          </a>
         </div>
       </section>
       <section className="home-newsletter"></section>
