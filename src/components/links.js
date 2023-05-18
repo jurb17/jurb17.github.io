@@ -8,7 +8,7 @@ import "../views/home.css";
 const Links = (props) => {
   return (
     <nav className="home-links">
-      <a href="#/pricing">
+      {/* <a href="#/pricing">
         <button className="home-button button">
           <span>Pricing</span>
         </button>
@@ -17,18 +17,20 @@ const Links = (props) => {
         <button className="home-button01 button">
           <span>Portfolio</span>
         </button>
-      </a>
-      <a href="#/form">
-        <button className="button home-button06">Get Started</button>
+      </a> */}
+      <a href="https://meetings.hubspot.com/jurbaczek">
+        <button id="outlined" className="button home-button06">
+          Schedule Dive!
+        </button>
       </a>
     </nav>
   );
 };
 
 Links.defaultProps = {
-  button: "Get Started",
-  text: "Pricing",
-  text1: "Portfolio",
+  button: "Schedule",
+  // text: "Pricing",
+  // text1: "Portfolio",
 };
 
 Links.propTypes = {
