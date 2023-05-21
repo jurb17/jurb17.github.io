@@ -20,7 +20,7 @@ const Links = (props) => {
       </a> */}
       <a href="https://meetings.hubspot.com/jurbaczek">
         <button id="outlined" className="button home-button06">
-          Schedule Dive!
+          Schedule Meeting
         </button>
       </a>
     </nav>
