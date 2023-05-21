@@ -1,18 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import './style.css'
-import Home from './views/home'
+// custom imports
+import App from "./App";
+import Home from "./views/home";
+import "./style.css";
+import SkyDiveEastCoast from "./views/skydiveeastcoast";
+// import config from "./config";
 
-const App = () => {
-  return (
-    <Router>
-      <div>
-        <Route component={Home} exact path="/" />
-      </div>
-    </Router>
-  )
-}
+// ========================================
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <BrowserRouter>
+    {/* <App /> */}
+    <div>
+      <Routes>
+        <Route Component={Home} exact path="" />
+        <Route Component={Home} exact path="/" />
+        <Route Component={Home} exact path="/home" />
+        <Route Component={SkyDiveEastCoast} exact path="/skydiveeastcoast" />
+      </Routes>
+    </div>
+  </BrowserRouter>,
+  document.getElementById("app")
+);

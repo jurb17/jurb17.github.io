@@ -45,8 +45,8 @@ const SplitSection = (props) => {
 };
 
 SplitSection.defaultProps = {
-  text: "Remarkable",
-  text1: "Remarkable",
+  text: "Jordan Web Design",
+  text1: "Jordan Web Design",
 };
 
 SplitSection.propTypes = {
