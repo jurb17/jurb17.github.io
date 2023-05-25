@@ -103,7 +103,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="home-banner">
+      {/* <section className="home-banner">
         <div className="home-container2">
           <div className="home-header5">
             <h2 className="home-title1">Expedite the process.</h2>
@@ -113,6 +113,25 @@ const Home = (props) => {
             </p>
           </div>
           <a href="https://meetings.hubspot.com/jurbaczek">
+            <button className="button">
+              <span>
+                <span>Schedule Meeting</span>
+                <br></br>
+              </span>
+            </button>
+          </a>
+        </div>
+      </section> */}
+      <section className="home-banner">
+        <div className="home-container2">
+          <div className="home-header5">
+            <h2 className="home-title1">Testing the Bookeo Scheduler</h2>
+            <p className="home-description6">
+              This button will reroute you to the Bookeo customer scheduler
+              page.
+            </p>
+          </div>
+          <a href="https://bookeo.com/jordanwebdesign">
             <button className="button">
               <span>
                 <span>Schedule Meeting</span>
