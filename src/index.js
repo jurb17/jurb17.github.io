@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // custom imports
 import App from "./App";
-import Home from "./views/home";
+import Home from "./pages/home/home";
 import "./style.css";
-import SkyDiveEastCoast from "./views/skydiveeastcoast";
+import SkyDiveEastCoast from "./pages/skydiveeastcoast/skydiveeastcoast";
 // import config from "./config";
 
 // ========================================

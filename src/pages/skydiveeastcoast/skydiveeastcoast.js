@@ -3,13 +3,12 @@ import React from "react";
 import DangerousHTML from "dangerous-html/react";
 import { Helmet } from "react-helmet";
 
-import Card from "../components/card";
-import Footer from "../components/footer";
-import "./home.css";
-import SplitSection from "../components/SplitSection";
+import Card from "../../components/card";
+import Footer from "../../components/footer";
+import SplitSection from "../../components/SplitSection";
 import { IconBrandHipchat, IconRocket, IconMagnet } from "@tabler/icons-react";
-import Links from "../components/links";
-import Navbar from "../components/Navbar";
+import Links from "../../components/links";
+import Navbar from "../../components/navbar/Navbar";
 
 const SkyDiveEastCoast = (props) => {
   return (

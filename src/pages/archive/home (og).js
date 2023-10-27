@@ -3,10 +3,9 @@ import React from "react";
 import DangerousHTML from "dangerous-html/react";
 import { Helmet } from "react-helmet";
 
-import Card from "../components/card";
-import Footer from "../components/footer";
-import "./home.css";
-import SplitSection from "../components/SplitSection";
+import Card from "../../components/card";
+import Footer from "../../components/footer";
+import SplitSection from "../../components/SplitSection";
 
 const Home = (props) => {
   return (

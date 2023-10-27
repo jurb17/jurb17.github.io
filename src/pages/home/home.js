@@ -1,15 +1,15 @@
 import React from "react";
-
 import DangerousHTML from "dangerous-html/react";
 import { Helmet } from "react-helmet";
 
-import Card from "../components/card";
-import Footer from "../components/footer";
-import "./home.css";
-import SplitSection from "../components/SplitSection";
+import Card from "../../components/card";
+import Footer from "../../components/footer";
+import styles from "./home.module.css";
+import "../archive/home.css";
+import SplitSection from "../../components/SplitSection";
 import { IconBrandHipchat, IconRocket, IconMagnet } from "@tabler/icons-react";
-import Links from "../components/links";
-import Navbar from "../components/Navbar";
+import Links from "../../components/links";
+import Navbar from "../../components/navbar/Navbar";
 
 const Home = (props) => {
   return (
@@ -64,6 +64,10 @@ const Home = (props) => {
         }
         filename={"standing_coffee_like.png"}
       ></SplitSection>
+      <section>
+        <p>Here is some text.</p>
+        <a href="/analytics">click me to see analytics</a>
+      </section>
       <section>
         <div className="home-heading">
           <h2 className="home-text10">What you can expect...</h2>

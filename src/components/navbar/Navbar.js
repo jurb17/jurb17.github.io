@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
-import "../views/home.css";
+import styles from "../../pages/home/home.module.css";
 import "./navbar.css";
-import Links from "./links";
+import Links from "../links";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = React.useState(false);
 
+  // This will evaluate whether the user has scrolled.
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 200) {
@@ -25,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="home-navbar">
       <header
-        className={("home-navbar-interactive", x.join(" "))}
+        className={(styles["home-navbar-interactive"], x.join(" "))}
         data-thq="thq-navbar"
       >
         {/* <div className="logo">

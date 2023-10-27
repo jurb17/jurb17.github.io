@@ -3,7 +3,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./links.css";
-import "../views/home.css";
+import styles from "../pages/home/home.module.css";
+import "../pages/archive/home.css";
 
 const Links = (props) => {
   return (

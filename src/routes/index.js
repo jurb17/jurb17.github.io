@@ -4,9 +4,15 @@ import Loadable from "../components/Loadable";
 
 // ==========================
 
-const HomePage = Loadable(lazy(() => import("../views/home")));
-const AboutPage = Loadable(lazy(() => import("../views/skydiveeastcoast")));
-const ContactPage = Loadable(lazy(() => import("../views/Contact")));
+const HomePage = Loadable(lazy(() => import("../pages/home/home")));
+const AboutPage = Loadable(
+  lazy(() => import("../pages/skydiveeastcoast/skydiveeastcoast"))
+);
+const ContactPage = Loadable(lazy(() => import("../pages/contact/Contact")));
+const AnalyticsPage = Loadable(
+  lazy(() => import("../pages/analytics/Analytics"))
+);
+const HousePage = Loadable(lazy(() => import("../pages/house/House")));
 
 const routes = () => [
   {
@@ -28,6 +34,14 @@ const routes = () => [
       {
         path: "contact",
         element: <ContactPage />,
+      },
+      {
+        path: "analytics",
+        element: <AnalyticsPage />,
+      },
+      {
+        path: "house",
+        element: <HousePage />,
       },
       {
         path: "404",

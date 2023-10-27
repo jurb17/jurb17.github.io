@@ -2,8 +2,6 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-import "../views/home.css";
-
 const SplitSection = (props) => {
   let filename = "/playground_assets/" + props.filename;
 
