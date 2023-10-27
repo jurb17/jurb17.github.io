@@ -13,15 +13,8 @@ import SkyDiveEastCoast from "./views/skydiveeastcoast";
 
 ReactDOM.render(
   <BrowserRouter>
-    {/* <App /> */}
-    <div>
-      <Routes>
-        <Route Component={Home} exact path="" />
-        <Route Component={Home} exact path="/" />
-        <Route Component={Home} exact path="/home" />
-        <Route Component={SkyDiveEastCoast} exact path="/skydiveeastcoast" />
-      </Routes>
-    </div>
+    <App />
+    <div>nothing</div>
   </BrowserRouter>,
   document.getElementById("app")
 );
